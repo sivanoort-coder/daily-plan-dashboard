@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Day Plan — 92 items</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+<script>
+// Recharts UMD is unreliable on CDN — stub out with no-op components so the dashboard renders without charts.
+window.Recharts = new Proxy({}, { get: () => (props) => React.createElement("div", { style: { display: "none" } }, props && props.children) });
+</script>
+<script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+<style>html,body{background:#030712;}</style>
+</head>
+<body>
+<div id="err" style="color:#fca5a5;background:#1f2937;padding:12px;font-family:monospace;font-size:12px;white-space:pre-wrap;display:none;"></div>
+<script>
+window.addEventListener("error", (e) => {
+  const el = document.getElementById("err");
+  el.style.display = "block";
+  el.textContent += "[error] " + (e.message || e.error) + "\n" + (e.filename||"") + ":" + (e.lineno||"") + "\n";
+});
+window.addEventListener("unhandledrejection", (e) => {
+  const el = document.getElementById("err");
+  el.style.display = "block";
+  el.textContent += "[promise] " + (e.reason && (e.reason.message||e.reason)) + "\n";
+});
+</script>
+<div id="root"></div>
+<script>window.INBOX_DATA = {"granola": {"items": [{"id": "granola-96826dc6-406b-4030-a253-2a12d71770eb", "title": "niek ketting en Sjoerd (Joe) van Oort", "inbox_status": "untriaged", "discovered_at": "2026-04-14T10:01:24.435150-05:00", "timestamp": "2026-04-14T11:30:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 2}}, {"id": "granola-23fe6c2e-7b73-4df7-b603-3e84194cb7e4", "title": "Demo", "inbox_status": "untriaged", "discovered_at": "2026-04-11T09:05:21.297198-05:00", "timestamp": "2026-04-10T08:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 7}}, {"id": "granola-81277b56-8476-48c7-a045-61306a0b914c", "title": "Joe/Julio catchup", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false, "attendees_count": 1}}, {"id": "granola-bb32a2e1-a942-42da-a175-0a9f58770813", "title": "Gift tax support", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-55cde31d-68ea-4882-84ed-c35403fd96c9", "title": "Givtapp troubleshooting", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-2754c2a9-6365-48b4-a352-51298a8e9132", "title": "Nico Ketting follow-up", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-5091124b-0e4c-483c-b59f-1f0f4e523cd5", "title": "Givtapp collector limits", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-3d07d8f0-3958-476c-a005-16a7768328da", "title": "Product trio", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "bd-us-g4k", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false, "attendees_count": 1}}, {"id": "granola-ab2e15bc-27bf-48a4-baa3-293071ea8af3", "title": "UK tax optimization", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-09T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-dd148b91-5f35-4688-843a-65ab3a0ac4b9", "title": "Arjan de Weerd call", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-08T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-17adc646-0459-4d75-8a1e-0fa15afc4c4e", "title": "Bridges meeting", "inbox_status": "untriaged", "discovered_at": "2026-04-10T21:02:08.375939-05:00", "timestamp": "2026-04-08T12:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false}}, {"id": "granola-6e44e7de-f3f1-4941-b381-08319756984f", "title": "Sjoerd/Dieter", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-07T13:45:00-05:00", "suggested_role": "ceo", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": false, "attendees_count": 2}}, {"id": "granola-fd755c0a-23ca-45c5-9071-e9906ad9a0fc", "title": "meeting SARS + 1528", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-07T09:30:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 2}}, {"id": "granola-ff35d983-383c-4729-927e-881bb71bd75e", "title": "Product trio", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-07T08:30:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 4}}, {"id": "granola-7c185123-3efe-4c7d-8bd0-c57ed80aa66d", "title": "Givt team Assemble!", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-07T08:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 4}}, {"id": "granola-83dd2969-4ad6-4386-bdaf-879237a64320", "title": "Sjoerd / Andy / Tine", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-06T17:30:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 3}}, {"id": "granola-b84bcae1-4b81-4fd3-b59b-29d90962eb86", "title": "Givt team Assemble!", "inbox_status": "untriaged", "discovered_at": "2026-04-08T19:00:00-05:00", "timestamp": "2026-04-06T08:00:00-05:00", "suggested_role": "pm-support", "suggested_classification": "meeting-processing", "scoring_hints": {"has_action_items": true, "attendees_count": 4}}]}, "calendar": {"items": [{"id": "cal-3p1q5tt9m6n0zac8st4ww3z1e", "title": "Joe - Danielle / The Park", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:11:52Z", "timestamp": "2026-04-15T11:00:00-05:00", "suggested_role": "bd-us-g4k", "suggested_classification": "review", "scoring_hints": {"start_time": "2026-04-15T11:00:00-05:00", "attendees_count": 2}}, {"id": "cal-9n4r1ss8k2l5yxw6ptu3vv2y0d", "title": "Givt EU - Monthly Standup", "inbox_status": "untriaged", "discovered_at": "2026-04-14T10:30:45Z", "timestamp": "2026-04-14T11:00:00-05:00", "suggested_role": "ceo-givt-eu", "suggested_classification": "meeting", "scoring_hints": {"start_time": "2026-04-14T11:00:00-05:00", "attendees_count": 1}}, {"id": "cal-2p8x6nn4h1f3vds7mq9r2tt5k8", "title": "Andy - Weekly Check-in", "inbox_status": "untriaged", "discovered_at": "2026-04-12T10:00:42Z", "timestamp": "2026-04-12T10:30:00-05:00", "suggested_role": "ceo", "suggested_classification": "meeting-processing", "scoring_hints": {"start_time": "2026-04-12T10:30:00-05:00", "attendees_count": 1}}, {"id": "cal-7d29h5kkj9j2bfs8pl4c3nnr2a", "title": "G4K Board Sync", "inbox_status": "untriaged", "discovered_at": "2026-04-11T13:30:15Z", "timestamp": "2026-04-11T14:00:00-05:00", "suggested_role": "ceo-g4k", "suggested_classification": "meeting", "scoring_hints": {"start_time": "2026-04-11T14:00:00-05:00", "attendees_count": 1}}]}, "linear": {"items": [{"id": "lin-COR-2349", "title": "Gathering Place: G4K kiosk deployment — Boathouse & Redbud locations", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:13:08.572733+00:00", "timestamp": "2026-04-09T21:43:06.607Z", "suggested_role": "pm-support", "suggested_classification": "review", "scoring_hints": {"priority": 2}}, {"id": "lin-ME-124", "title": "Follow up with Bridges on first kiosk placement", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:13:08.572733+00:00", "timestamp": "2026-04-09T02:33:46.159Z", "suggested_role": "pm-support", "suggested_classification": "review", "scoring_hints": {"priority": 2}}, {"id": "lin-ME-103", "title": "Pay IRS $16,533 Federal + $4,124 State for 2025 returns", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:13:08.572733+00:00", "timestamp": "2026-04-07T13:21:25.876Z", "suggested_role": "pm-support", "suggested_classification": "review", "scoring_hints": {"priority": 2}}, {"id": "lin-COR-2257", "title": "Follow up with Martijn Wilbrink — confirm Monday VIBAN sync", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:13:08.572733+00:00", "timestamp": "2026-03-26T05:58:28.407Z", "suggested_role": "pm-support", "suggested_classification": "review", "scoring_hints": {"priority": 3}}, {"id": "lin-COR-2256", "title": "Review & process Delta Dental April 2026 invoice (#0014065)", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:13:08.572733+00:00", "timestamp": "2026-03-26T05:58:07.358Z", "suggested_role": "pm-support", "suggested_classification": "review", "scoring_hints": {"priority": 3}}]}, "zendesk": {"items": [{"id": "zd-42186", "title": "Supportverzoek", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-04-12T18:17:13Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "open"}}, {"id": "zd-42209", "title": "Re:", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-04-11T18:53:37Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41311", "title": "Betaalschijf", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-03-13T08:31:13Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41639", "title": "App Feedback", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-03-07T20:41:03Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41657", "title": "Verzoek tot accountverwijdering", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-03-06T19:49:06Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41572", "title": "Dashboard Request: Donaties - transacties", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-03-02T23:15:54Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41294", "title": "Dashboard Request: Hulp nodig bij upload collecterooster", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-02-23T19:04:10Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41290", "title": "Re: Givt - Herinnering: Nodig een gemachtigde uit voor de bankrekening", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-02-17T14:19:03Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-41232", "title": "Dashboard Request: Hulp nodig bij upload collecterooster", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-02-13T14:01:34Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40892", "title": "Dashboard Request: Nieuw excel bestand toewijzingen uploaden", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-01-23T03:03:42Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40786", "title": "Nieuwe AI-tool voor uploaden collecterooster - opmerkingen", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-01-21T19:04:25Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40552", "title": "Dashboard Request: Hulp nodig bij upload collecterooster", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-01-15T18:49:13Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40816", "title": "App Feedback", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2026-01-14T13:36:23Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40272", "title": "Dashboard Request: Hulp nodig bij upload collecterooster", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-12-29T20:24:22Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40584", "title": "App Feedback", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-12-29T14:18:08Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40547", "title": "Re: Afschrijvingsmachtiging voltooid", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-12-27T17:50:22Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-40411", "title": "App Feedback", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-12-18T20:50:05Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-39550", "title": "You have left us a message on: Support", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-10-30T17:01:16Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-39242", "title": "Givt dashboard", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-10-28T23:07:34Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-39273", "title": "RE: [Ontvangen / Received] We horen graag jouw feedback op het nieuwe dashboard", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-10-28T23:07:25Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-39507", "title": "Re: Vernieuwingen bij Givt", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-10-28T22:21:22Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-38652", "title": "Website NL: contact formulier", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2025-10-23T20:13:02Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"ticket_status": "pending"}}, {"id": "zd-15509", "title": "Terugbetaling Givt servicefee & Terugbetalen giften aan gevers van refused orgs", "inbox_status": "updated", "discovered_at": "2026-04-12T20:13:03.559714+00:00", "timestamp": "2024-04-16T13:55:15Z", "suggested_role": "pm-support", "suggested_classification": "ticket-response", "scoring_hints": {"priority": "normal", "ticket_status": "pending"}}]}, "email": {"items": [{"id": "email-19d8cf5ede1a1121", "title": "PW: FLAG: Case Number: P-100-26104-791545 Received: Apr 14, 2026", "inbox_status": "untriaged", "discovered_at": "2026-04-14T12:27:28.517241-05:00", "timestamp": "2026-04-14T17:06:59+00:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d8cd48285f6c90", "title": "Tired of E-Waste? We Make Electronics Recycling Easy!", "inbox_status": "untriaged", "discovered_at": "2026-04-14T12:27:28.517241-05:00", "timestamp": "2026-04-14T16:30:29+00:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d8cca030868111", "title": "Your receipt from Anthropic, PBC #2770-1062-9923", "inbox_status": "untriaged", "discovered_at": "2026-04-14T12:27:28.517241-05:00", "timestamp": "2026-04-14T16:19:01+00:00", "suggested_role": "ceo", "suggested_classification": "review", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d8ceeef65be0de", "title": "RE: Invoice for completed project work & 3D printed parts", "inbox_status": "untriaged", "discovered_at": "2026-04-14T12:27:28.517241-05:00", "timestamp": "2026-04-14T11:59:19-05:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true, "joe_reply_is_latest": false}}, {"id": "email-19d8cbb37dbb6dc7", "title": "FW: Invoice for completed project work & 3D printed parts", "inbox_status": "untriaged", "discovered_at": "2026-04-14T12:27:28.517241-05:00", "timestamp": "2026-04-14T11:02:50-05:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true, "joe_reply_is_latest": false}}, {"id": "email-19d788261f959d9d", "title": "RE: Follow-up from today", "inbox_status": "untriaged", "discovered_at": "2026-04-10T17:00:00-05:00", "timestamp": "2026-04-10T12:48:20-05:00", "suggested_role": "bd-us-g4k", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d773e50ce770ab", "title": "Time to run payroll for Givt Inc", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T11:54:25+00:00", "suggested_role": "ceo", "suggested_classification": "review", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d773e50ce770ab", "title": "Time to run payroll for Givt Inc", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T11:54:00Z", "suggested_role": "ceo", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d770f8d57774ec", "title": "Join Our GTM Masterclass: Strategies That Actually Convert", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T11:03:20+00:00", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d770f8d57774ec", "title": "Join Our GTM Masterclass", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T11:03:00Z", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d77025f3ab206d", "title": "He co-founded Intercom. Now he's answering your questions. 15 spots only.", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T10:48:56+00:00", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d77025f3ab206d", "title": "He co-founded Intercom AMA", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T10:48:00Z", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d76c6e85e48ed1", "title": "call", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T09:43:56+00:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true, "joe_reply_is_latest": false}}, {"id": "email-19d76c6e85e48ed1", "title": "call", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T09:43:00Z", "suggested_role": "executive", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true, "joe_reply_is_latest": true}}, {"id": "email-19d768e432f7234c", "title": "Your IO credit limit has changed", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T08:42:07+00:00", "suggested_role": "ceo", "suggested_classification": "review", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d768e432f7234c", "title": "Your IO credit limit has changed", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T08:42:00Z", "suggested_role": "ceo", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d76841123acbec", "title": "Sjoerd, I didn't spot your name on our attendee list!", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T08:30:59+00:00", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d76841123acbec", "title": "EU-Startups Summit attendee list", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T08:30:00Z", "suggested_role": "bd-us-g4k", "suggested_classification": "review", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d767d753038aac", "title": "Please add money to your account", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T08:23:46+00:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d767d753038aac", "title": "Please add money to your account", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T08:23:00Z", "suggested_role": "ceo", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d767186c29c8cc", "title": "Capital Waters Event 2026 agenda", "inbox_status": "untriaged", "discovered_at": "2026-04-10T12:05:40-05:00", "timestamp": "2026-04-10T08:10:22+00:00", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d767186c29c8cc", "title": "Capital Waters Event 2026 agenda", "inbox_status": "untriaged", "discovered_at": "2026-04-10T15:45:00-05:00", "timestamp": "2026-04-10T08:10:00Z", "suggested_role": "bd-us-g4k", "suggested_classification": "review", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}, {"id": "email-19d721e68ff7ea8c", "title": "Reminder: Parking Subscription Renewal", "inbox_status": "untriaged", "discovered_at": "2026-04-09T21:45:00-05:00", "timestamp": "2026-04-09T12:01:27Z", "suggested_role": "skip", "suggested_classification": "notification", "scoring_hints": {"joe_replied": false, "joe_reply_is_latest": false}}]}, "slack": {"items": [{"id": "slack-D1CUP5VE0-1776183565.072249", "title": "Tine shared Seedrs status update based on transcript and notes. Missing updates ", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:12:31.514513+00:00", "timestamp": "2026-04-14T11:19:25-05:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C5S218Y9M-1776175221.362229", "title": "Slackbot reminder: Tine to check with Sjoerd and Matt if they can send the inves", "inbox_status": "untriaged", "discovered_at": "2026-04-14T17:12:31.514345+00:00", "timestamp": "2026-04-14T09:00:21-05:00", "suggested_role": "pm-support", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C21CHKLEL-1775753438.512339", "title": "Matt ordered a hoodie for Jonah from Technoblade and ordered items from Amazon t", "inbox_status": "untriaged", "discovered_at": "2026-04-10T17:53:25+00:00", "timestamp": "2026-04-09T11:50:38-05:00", "suggested_role": "pm-support", "suggested_classification": "social", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C08BXP1DEG0-1775750232.481939", "title": "Andy says UK support is taken care of and asks if Zendesk ticket can be solved. ", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-09T10:57:12-05:00", "suggested_role": "pm-support", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true}}, {"id": "slack-dm-maikel-annual-overview-20260408", "title": "Joe proposed auto-triggering annual overview on account termination. Maikel says", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-08T13:52:33-05:00", "suggested_role": "pm-support", "suggested_classification": "feature-discussion", "scoring_hints": {"joe_replied": false}}, {"id": "slack-dm-donna-qr-20260408", "title": "Donna shared QR code feedback and sent Stichting Revive GUID (EEC9D7E3-532A-4E45", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-08T13:13:52-05:00", "suggested_role": "pm-support", "suggested_classification": "product-feedback", "scoring_hints": {"joe_replied": false}}, {"id": "slack-channel-bwp-double-payments-20260408", "title": "Double payments to orgs need reclaiming via SEPA DD. Martijn can execute. Plan: ", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-08T09:02:21-05:00", "suggested_role": "cfo", "suggested_classification": "finance-ops", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-donna-artist-20260408", "title": "Donna asked what to do with last artist in app (Julian Goedhart Music) since new", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-08T03:25:22-05:00", "suggested_role": "pm-support", "suggested_classification": "product-decision", "scoring_hints": {"joe_replied": true}}, {"id": "slack-dm-tine-sars-20260407", "title": "Tine asked about SARs valuation (Pedro: 6.38) and shared SARs mechanics from Lin", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-07T15:00:00-05:00", "suggested_role": "ceo", "suggested_classification": "hr-finance", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-andy-kiosk-20260407", "title": "Andy: Matt printing coin bins today, meeting Mike tomorrow re kiosk length, mess", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-07T12:00:22-05:00", "suggested_role": "bd-us-g4k", "suggested_classification": "hardware", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-tine-g4k-church-20260407", "title": "Tine flagged NL church interested in G4K and asked if Joe will continue communic", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-07T08:57:14-05:00", "suggested_role": "ceo", "suggested_classification": "business-development", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-matt-accounts-20260407", "title": "Matt is managing kids this week, won't attend standups, limited hours, traveling", "inbox_status": "updated", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-07T01:36:57-05:00", "suggested_role": "cfo", "suggested_classification": "team-update", "scoring_hints": {"joe_replied": true}}, {"id": "slack-C08BXP1DEG0-1775508804.803259", "title": "Andy shared quote for custom box and smaller internal box. Joe replied about shi", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-06T15:53:24-05:00", "suggested_role": "bd-us-g4k", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-tine-for-you-usage-20260406", "title": "For You flow metric: 244 unique people on Sunday, up from last week. Usage trend", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-06T10:50:09-05:00", "suggested_role": "ceo", "suggested_classification": "metrics", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C08BHT669T5-1775487679.222879", "title": "Tine tagged Joe with a platform fee project update link about effective percenta", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-06T10:01:19-05:00", "suggested_role": "ceo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C46C1D39V-1775481432.655929", "title": "Andy asks if a payout to themselves was initiated by Givt. Joe replied unsure, t", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-06T08:17:12-05:00", "suggested_role": "pm-support", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": true}}, {"id": "slack-channel-maikel-slow-goals-20260405", "title": "Maikel tested app on bad 5G connection, goals took time to load (>5 sec spinner)", "inbox_status": "untriaged", "discovered_at": "2026-04-09T10:47:42+00:00", "timestamp": "2026-04-05T09:53:56-05:00", "suggested_role": "pm-support", "suggested_classification": "product-issue", "scoring_hints": {"joe_replied": true}}, {"id": "slack-C05AGMCJUDU-1775255883.321929", "title": "Maikel asks Joe to investigate 'Ark Mission' org (GUID: C5E2078F-00BA-4B14-9B17-", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-03T17:38:03-05:00", "suggested_role": "cfo", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C08BXP1DEG0-1775241600.320679", "title": "Maikel asks if they should use 'Goed doel' instead of 'Stichting' in Dutch label", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-03T13:40:00-05:00", "suggested_role": "pm-support", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}, {"id": "slack-C08BXP1DEG0-1775231228.808149", "title": "Tine confirms that collection schedule buttons (create from scratch vs upload) a", "inbox_status": "untriaged", "discovered_at": "2026-04-10T13:08:39+00:00", "timestamp": "2026-04-03T10:47:08-05:00", "suggested_role": "pm-support", "suggested_classification": "follow-up", "scoring_hints": {"joe_replied": false}}]}};</script>
+<script type="text/babel" data-presets="env,react">
+const { useState, useMemo } = React;
+const { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } = Recharts;
+const INBOX_DATA = window.INBOX_DATA;
+
+/**
+ * INBOX_DATA injection contract
+ * ------------------------------
+ * This dashboard is a template. Before rendering, the `plan` / `triage` skills
+ * perform a literal string replacement of the token `__INBOX_DATA__` with a
+ * JSON object matching this shape (see build_inbox_data.py):
+ *
+ *   {
+ *     granola:  { items: [ TriageItem, ... ] },
+ *     calendar: { items: [ TriageItem, ... ] },
+ *     linear:   { items: [ TriageItem, ... ] },
+ *     zendesk:  { items: [ TriageItem, ... ] },
+ *     email:    { items: [ TriageItem, ... ] },
+ *     slack:    { items: [ TriageItem, ... ] },
+ *   }
+ *
+ * Each TriageItem minimally has:
+ *   {
+ *     id:                     string,
+ *     title:                  string,
+ *     timestamp:              ISO8601 string,
+ *     inbox_status:           "untriaged" | "updated" | "snoozed" | "triaged" | "dismissed",
+ *     suggested_role?:        "pm-support" | "ceo" | "bd-europe" | "bd-us-g4k" | "cfo" | "self-mgmt" | "personal-life",
+ *     suggested_classification?: string,
+ *     relative_label?:        string,
+ *     source_url?:            string,
+ *     source_data?:           object,
+ *     scoring_hints?:         { potential_issue?: bool, priority?: "urgent"|"high"|..., overdue?: bool },
+ *   }
+ *
+ * The SOURCES keys below MUST match the top-level keys of the injected object.
+ * The ROLE_COLORS keys MUST match the Linear label values used by the rules
+ * engine (self-mgmt and personal-life — not "self-management"/"personal").
+ */
+
+
+const SOURCES = {
+  granola: { label: "Granola", color: "#8B5CF6", icon: "🎙️" },
+  calendar: { label: "Calendar", color: "#3B82F6", icon: "📅" },
+  linear: { label: "Linear", color: "#10B981", icon: "🔷" },
+  zendesk: { label: "Zendesk", color: "#F59E0B", icon: "🎫" },
+  email: { label: "Email", color: "#EF4444", icon: "✉️" },
+  slack: { label: "Slack", color: "#4A154B", icon: "💬" },
+};
+
+const STATUS_COLORS = {
+  untriaged: "#EF4444",
+  updated: "#F97316",
+  snoozed: "#8B5CF6",
+  triaged: "#10B981",
+  dismissed: "#6B7280",
+};
+
+const ROLES = {
+  "pm-support":    { label: "PM + Support", color: "#3B82F6", icon: "🛠️" },
+  "ceo":           { label: "CEO",          color: "#8B5CF6", icon: "🧭" },
+  "bd-europe":     { label: "BD Europe",    color: "#10B981", icon: "🇪🇺" },
+  "bd-us-g4k":     { label: "BD US / G4K",  color: "#F59E0B", icon: "🇺🇸" },
+  "cfo":           { label: "CFO",          color: "#EC4899", icon: "💰" },
+  "self-mgmt":     { label: "Self-Mgmt",    color: "#6366F1", icon: "⚙️" },
+  "personal-life": { label: "Personal",     color: "#9CA3AF", icon: "🏠" },
+};
+const ROLE_ORDER = ["pm-support","ceo","bd-europe","bd-us-g4k","cfo","self-mgmt","personal-life"];
+const ROLE_COLORS = Object.fromEntries(Object.entries(ROLES).map(([k,v]) => [k, v.color]));
+
+// Pressure thresholds — same formula as ME-168 spec: (overdue × 3) + (high × 2) + (stale × 1)
+const PRESSURE_RED = 8;
+const PRESSURE_YELLOW = 3;
+
+function pressureFor(items) {
+  let overdue = 0, high = 0, stale = 0;
+  const now = Date.now();
+  for (const i of items) {
+    const hints = i.scoring_hints || {};
+    const prioRaw = hints.priority;
+    const prio = typeof prioRaw === "string" ? prioRaw.toLowerCase() : "";
+    if (hints.overdue === true) overdue++;
+    if (prio === "urgent" || prio === "high" || hints.potential_issue === true || i.inbox_status === "updated") high++;
+    if (i.timestamp) {
+      const ageDays = (now - new Date(i.timestamp).getTime()) / (1000*60*60*24);
+      if (ageDays > 7) stale++;
+    }
+  }
+  const score = overdue*3 + high*2 + stale;
+  const signal = score >= PRESSURE_RED ? "🔴" : score >= PRESSURE_YELLOW ? "🟡" : "🟢";
+  return { score, signal, overdue, high, stale };
+}
+
+function daysAgo(timestamp) {
+  if (!timestamp) return null;
+  const diff = Date.now() - new Date(timestamp).getTime();
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  if (days === 0) return "Today";
+  if (days === 1) return "Yesterday";
+  return `${days}d ago`;
+}
+
+function formatTime(timestamp, tz) {
+  if (!timestamp) return "";
+  return new Date(timestamp).toLocaleString("en-GB", {
+    weekday: "short", day: "numeric", month: "short",
+    hour: "2-digit", minute: "2-digit",
+    timeZone: tz || "Europe/Amsterdam",
+  });
+}
+
+function TriageDashboard() {
+  const [selectedSource, setSelectedSource] = useState("all");
+  const [selectedRole, setSelectedRole] = useState("all");
+  const [selectedStatus, setSelectedStatus] = useState("actionable");
+  const [expandedItem, setExpandedItem] = useState(null);
+
+  const allItems = useMemo(() => {
+    const items = [];
+    for (const [source, data] of Object.entries(INBOX_DATA)) {
+      for (const item of data.items || []) {
+        items.push({ ...item, _source: source });
+      }
+    }
+    return items.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  }, []);
+
+  const actionable = useMemo(
+    () => allItems.filter((i) => i.inbox_status === "untriaged" || i.inbox_status === "updated"),
+    [allItems]
+  );
+
+  const filteredItems = useMemo(() => {
+    let items = allItems;
+    if (selectedSource !== "all") items = items.filter((i) => i._source === selectedSource);
+    if (selectedRole !== "all") items = items.filter((i) => (i.suggested_role || "unknown") === selectedRole);
+    if (selectedStatus === "actionable") {
+      items = items.filter((i) => i.inbox_status === "untriaged" || i.inbox_status === "updated");
+    } else if (selectedStatus !== "all") {
+      items = items.filter((i) => i.inbox_status === selectedStatus);
+    }
+    return items;
+  }, [allItems, selectedSource, selectedRole, selectedStatus]);
+
+  const actionableCount = actionable.length;
+  const triagedCount = allItems.filter((i) => i.inbox_status === "triaged").length;
+  const snoozedCount = allItems.filter((i) => i.inbox_status === "snoozed").length;
+
+  // By-role pivot — roles in fixed order, only render roles with any actionable items
+  const roleBreakdown = useMemo(() => {
+    const byRole = {};
+    for (const i of actionable) {
+      const r = i.suggested_role || "unknown";
+      if (!byRole[r]) byRole[r] = []; byRole[r].push(i);
+    }
+    const rows = [];
+    for (const r of ROLE_ORDER) {
+      const items = byRole[r] || [];
+      if (!items.length) continue;
+      rows.push({ role: r, items, count: items.length, pressure: pressureFor(items) });
+    }
+    // Unknown/other roles at the tail
+    for (const [r, items] of Object.entries(byRole)) {
+      if (ROLE_ORDER.includes(r)) continue;
+      rows.push({ role: r, items, count: items.length, pressure: pressureFor(items) });
+    }
+    return rows;
+  }, [actionable]);
+
+  const overallPressure = useMemo(() => pressureFor(actionable), [actionable]);
+
+  // Source breakdown for pie
+  const sourceData = Object.entries(SOURCES).map(([key, { label, color }]) => ({
+    name: label,
+    value: actionable.filter((i) => i._source === key).length,
+    color,
+  })).filter((d) => d.value > 0);
+
+  // Role bar (kept as a chart for at-a-glance)
+  const roleData = roleBreakdown.map((r) => ({
+    role: ROLES[r.role]?.label || r.role,
+    count: r.count,
+    fill: ROLES[r.role]?.color || "#9CA3AF",
+  }));
+
+  // Age breakdown
+  const ageGroups = { today: 0, yesterday: 0, thisWeek: 0, older: 0 };
+  actionable.forEach((i) => {
+    const diff = (Date.now() - new Date(i.timestamp).getTime()) / (1000 * 60 * 60 * 24);
+    if (diff < 1) ageGroups.today++;
+    else if (diff < 2) ageGroups.yesterday++;
+    else if (diff < 7) ageGroups.thisWeek++;
+    else ageGroups.older++;
+  });
+
+  return (
+    <div className="min-h-screen bg-gray-950 text-gray-100 p-6">
+      {/* Header */}
+      <div className="mb-6 flex items-baseline justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-white mb-1">Day Plan</h1>
+          <p className="text-gray-400 text-sm">
+            {actionableCount} items need attention · {triagedCount} triaged · {snoozedCount} snoozed
+          </p>
+        </div>
+        <div className="text-sm text-gray-300">
+          Overall pressure <span className="text-xl ml-1">{overallPressure.signal}</span>
+          <span className="text-gray-500 text-xs ml-2">(score {overallPressure.score})</span>
+        </div>
+      </div>
+
+      {/* By-source stat cards */}
+      <div className="grid grid-cols-6 gap-3 mb-6">
+        {Object.entries(SOURCES).map(([key, { label, color, icon }]) => {
+          const count = actionable.filter((i) => i._source === key).length;
+          const total = allItems.filter((i) => i._source === key).length;
+          const selected = selectedSource === key;
+          return (
+            <button
+              key={key}
+              onClick={() => setSelectedSource(selected ? "all" : key)}
+              className={`rounded-lg p-4 text-left transition-all ${
+                selected ? "ring-2 ring-offset-2 ring-offset-gray-950" : "hover:bg-gray-800"
+              } bg-gray-900`}
+              style={selected ? { boxShadow: `0 0 0 2px ${color}` } : {}}
+            >
+              <div className="text-2xl mb-1">{icon}</div>
+              <div className="text-sm text-gray-400">{label}</div>
+              <div className="text-xl font-bold" style={{ color }}>{count}</div>
+              <div className="text-xs text-gray-500">{total} total</div>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* By-role pivot panel (ME-168) */}
+      <div className="bg-gray-900 rounded-lg p-4 mb-6">
+        <div className="flex items-baseline justify-between mb-3">
+          <h3 className="text-sm font-medium text-gray-300">By Role · pressure = (overdue × 3) + (high × 2) + (stale × 1)</h3>
+          {selectedRole !== "all" && (
+            <button
+              onClick={() => setSelectedRole("all")}
+              className="text-xs text-blue-400 hover:text-blue-300"
+            >
+              Clear role filter
+            </button>
+          )}
+        </div>
+        {roleBreakdown.length === 0 ? (
+          <div className="text-gray-500 text-sm">No actionable items across any role. ✅</div>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {roleBreakdown.map(({ role, count, pressure }) => {
+              const meta = ROLES[role] || { label: role, color: "#9CA3AF", icon: "📋" };
+              const selected = selectedRole === role;
+              return (
+                <button
+                  key={role}
+                  onClick={() => setSelectedRole(selected ? "all" : role)}
+                  className={`rounded-md p-3 text-left transition-colors bg-gray-800 hover:bg-gray-700 ${
+                    selected ? "ring-2" : ""
+                  }`}
+                  style={selected ? { boxShadow: `0 0 0 2px ${meta.color}` } : {}}
+                  title={`overdue ${pressure.overdue} · high ${pressure.high} · stale ${pressure.stale}`}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg">{meta.icon}</span>
+                      <span className="text-sm font-medium" style={{ color: meta.color }}>{meta.label}</span>
+                    </div>
+                    <span className="text-lg">{pressure.signal}</span>
+                  </div>
+                  <div className="flex items-baseline justify-between">
+                    <span className="text-xl font-bold text-gray-100">{count}</span>
+                    <span className="text-xs text-gray-500">
+                      {pressure.overdue > 0 && <span className="text-red-400 mr-1">⏰{pressure.overdue}</span>}
+                      {pressure.high > 0 && <span className="text-orange-400 mr-1">⚡{pressure.high}</span>}
+                      {pressure.stale > 0 && <span className="text-gray-400">🕸{pressure.stale}</span>}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Charts row */}
+      <div className="grid grid-cols-3 gap-4 mb-6">
+        <div className="bg-gray-900 rounded-lg p-4">
+          <h3 className="text-sm font-medium text-gray-400 mb-2">By Source</h3>
+          <ResponsiveContainer width="100%" height={160}>
+            <PieChart>
+              <Pie data={sourceData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={60} innerRadius={30}>
+                {sourceData.map((entry, i) => (<Cell key={i} fill={entry.color} />))}
+              </Pie>
+              <Tooltip contentStyle={{ backgroundColor: "#1F2937", border: "none", borderRadius: "8px" }} itemStyle={{ color: "#F3F4F6" }}/>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="bg-gray-900 rounded-lg p-4">
+          <h3 className="text-sm font-medium text-gray-400 mb-2">By Role</h3>
+          <ResponsiveContainer width="100%" height={160}>
+            <BarChart data={roleData} layout="vertical">
+              <XAxis type="number" hide />
+              <YAxis type="category" dataKey="role" width={100} tick={{ fill: "#9CA3AF", fontSize: 11 }} />
+              <Bar dataKey="count" radius={[0, 4, 4, 0]}>
+                {roleData.map((entry, i) => (<Cell key={i} fill={entry.fill} />))}
+              </Bar>
+              <Tooltip contentStyle={{ backgroundColor: "#1F2937", border: "none", borderRadius: "8px" }} itemStyle={{ color: "#F3F4F6" }}/>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="bg-gray-900 rounded-lg p-4">
+          <h3 className="text-sm font-medium text-gray-400 mb-3">Age of Actionable</h3>
+          <div className="space-y-3">
+            {[
+              { label: "Today", count: ageGroups.today, color: "#10B981" },
+              { label: "Yesterday", count: ageGroups.yesterday, color: "#3B82F6" },
+              { label: "This week", count: ageGroups.thisWeek, color: "#F59E0B" },
+              { label: "Older", count: ageGroups.older, color: "#EF4444" },
+            ].map(({ label, count, color }) => (
+              <div key={label} className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
+                  <span className="text-sm text-gray-300">{label}</span>
+                </div>
+                <span className="text-sm font-medium" style={{ color }}>{count}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Filter bar */}
+      <div className="flex gap-2 mb-4 flex-wrap items-center">
+        {[
+          { key: "actionable", label: `Actionable (${actionableCount})` },
+          { key: "snoozed", label: `Snoozed (${snoozedCount})` },
+          { key: "triaged", label: `Triaged (${triagedCount})` },
+          { key: "all", label: `All (${allItems.length})` },
+        ].map(({ key, label }) => (
+          <button
+            key={key}
+            onClick={() => setSelectedStatus(key)}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              selectedStatus === key ? "bg-blue-600 text-white" : "bg-gray-800 text-gray-400 hover:text-gray-200"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+        {(selectedSource !== "all" || selectedRole !== "all") && (
+          <span className="text-xs text-gray-500 ml-2">
+            filter:{selectedSource !== "all" && ` source=${selectedSource}`}{selectedRole !== "all" && ` role=${selectedRole}`}
+          </span>
+        )}
+      </div>
+
+      {/* Item list */}
+      <div className="space-y-1">
+        {filteredItems.length === 0 && (
+          <div className="text-center py-12 text-gray-500">
+            {selectedStatus === "actionable" ? "All caught up! Nothing to triage here." : "No items match this filter."}
+          </div>
+        )}
+        {filteredItems.map((item) => {
+          const src = SOURCES[item._source] || { label: item._source, color: "#6B7280", icon: "📋" };
+          const isExpanded = expandedItem === item.id;
+          const roleMeta = ROLES[item.suggested_role];
+          return (
+            <div key={item.id + item._source + item.timestamp}>
+              <button
+                onClick={() => setExpandedItem(isExpanded ? null : item.id)}
+                className="w-full text-left px-4 py-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors flex items-center gap-3"
+              >
+                <span className="text-lg flex-shrink-0">{src.icon}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-medium text-gray-200 truncate">{item.title}</div>
+                  <div className="text-xs text-gray-500 flex gap-3 mt-0.5 flex-wrap">
+                    <span>{item.relative_label || daysAgo(item.timestamp)}</span>
+                    <span className="text-gray-600">·</span>
+                    <span>{formatTime(item.timestamp)}</span>
+                    {roleMeta && (
+                      <span className="px-1.5 rounded"
+                            style={{ backgroundColor: roleMeta.color + "20", color: roleMeta.color }}>
+                        {roleMeta.icon} {roleMeta.label}
+                      </span>
+                    )}
+                    {item.suggested_classification && (
+                      <span className="text-gray-500">{item.suggested_classification}</span>
+                    )}
+                  </div>
+                </div>
+                <div className="px-2 py-0.5 rounded text-xs font-medium flex-shrink-0"
+                     style={{ backgroundColor: (STATUS_COLORS[item.inbox_status] || "#6B7280") + "20",
+                              color: STATUS_COLORS[item.inbox_status] || "#9CA3AF" }}>
+                  {item.inbox_status}
+                </div>
+              </button>
+              {isExpanded && (
+                <div className="ml-12 px-4 py-3 text-xs text-gray-400 bg-gray-900 rounded-b-lg -mt-1 border-t border-gray-800">
+                  <div className="grid grid-cols-2 gap-2">
+                    <div>ID: <span className="text-gray-300">{item.id}</span></div>
+                    <div>Source: <span className="text-gray-300">{item._source}</span></div>
+                    <div>Classification: <span className="text-gray-300">{item.suggested_classification || "—"}</span></div>
+                    <div>Role: <span className="text-gray-300">{item.suggested_role || "—"}</span></div>
+                    {item.source_url && (
+                      <div className="col-span-2">URL: <span className="text-blue-400 break-all">{item.source_url}</span></div>
+                    )}
+                    {item.source_data && (
+                      <div className="col-span-2 mt-1">
+                        <pre className="bg-gray-800 p-2 rounded text-gray-300 overflow-x-auto">
+                          {JSON.stringify(item.source_data, null, 2)}
+                        </pre>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-8 text-xs text-gray-600 text-center">
+        This is an overview, not a work surface. Open the role project you want to work in to take action.
+      </div>
+    </div>
+  );
+}
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(<TriageDashboard />);
+</script>
+</body>
+</html>

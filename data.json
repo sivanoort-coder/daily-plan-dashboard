@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-15T13:06:32.779599Z",
+  "generated_at": "2026-04-15T17:11:06.775800Z",
   "roles": [
     {
       "role": "pm-support",
-      "queue_count": 47,
+      "queue_count": 90,
       "active_count": 24,
-      "total": 71,
+      "total": 114,
       "queue": [
         {
           "id": "lin-COR-2348",
@@ -335,6 +335,307 @@
           "title": "Nico Ketting en Sjoerd (Joe) van Oort",
           "routed_at": "2026-04-15T03:37:51.308939+00:00",
           "summary_hint": null
+        },
+        {
+          "id": "zd-42262",
+          "source": "zendesk",
+          "title": "VKB Partner Update april 2026",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42261",
+          "source": "zendesk",
+          "title": "DDCMS Evo Tab Update",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42260",
+          "source": "zendesk",
+          "title": "New Call from +44 (7392) 566834",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42259",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (61) 3453150 on 04/15/2026 9:22 AM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42258",
+          "source": "zendesk",
+          "title": "New Voice Message from +44 (7392) 566834 on 04/15/2026 8:16 AM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42252",
+          "source": "zendesk",
+          "title": "Foutieve afschrijving?",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42251",
+          "source": "zendesk",
+          "title": "Dashboard Request: wijzigen van het bedankje scherm",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42250",
+          "source": "zendesk",
+          "title": "Re: Confirmation of your donation through Givt",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42249",
+          "source": "zendesk",
+          "title": "Supportverzoek",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42246",
+          "source": "zendesk",
+          "title": "New Call from +31 (20) 6247766",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42202",
+          "source": "zendesk",
+          "title": "Dashboard Request: Contact gegevens periodieke gever",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42245",
+          "source": "zendesk",
+          "title": "Veranderen bankrekeningnummer",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-39002",
+          "source": "zendesk",
+          "title": "Website NL: contact formulier",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42244",
+          "source": "zendesk",
+          "title": "Supportverzoek",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42049",
+          "source": "zendesk",
+          "title": "Aanvullende info nav onze meeting van afgelopen maandag",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42235",
+          "source": "zendesk",
+          "title": "probleem app",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42232",
+          "source": "zendesk",
+          "title": "Aanmelding plus plan Givt",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42234",
+          "source": "zendesk",
+          "title": "Dashboard Request: Wijziging organisatienaam",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42233",
+          "source": "zendesk",
+          "title": "Stuur mij maar een nummer wat het lukt mij niet g…",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42231",
+          "source": "zendesk",
+          "title": "Dashboard Request: RSIN wijziging",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42230",
+          "source": "zendesk",
+          "title": "Dashboard Request: Wijziging juridische organisatienaam",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42228",
+          "source": "zendesk",
+          "title": "New Call from +31 (64) 3882010",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42227",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (64) 3882010 on 04/13/2026 5:07 PM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42226",
+          "source": "zendesk",
+          "title": "Re: [Givt] Re: Dashboard Request: Bankrekening toevoegen",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42225",
+          "source": "zendesk",
+          "title": "inlogprobleem",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42224",
+          "source": "zendesk",
+          "title": "App Feedback",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42223",
+          "source": "zendesk",
+          "title": "App Feedback",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-40788",
+          "source": "zendesk",
+          "title": "Re: RE: [BULK] Samenwerking Givt en Opwekking",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42221",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (61) 4990204 on 04/13/2026 12:42 PM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42219",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (64) 2931771 on 04/13/2026 11:25 AM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42218",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (61) 3061888 on 04/13/2026 8:49 AM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42217",
+          "source": "zendesk",
+          "title": "Receipt for subscription payment Apr 12, 2026",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42214",
+          "source": "zendesk",
+          "title": "Re: Account successfully verified",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42213",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (61) 6777617 on 04/11/2026 3:58 PM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42212",
+          "source": "zendesk",
+          "title": "App Feedback",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42201",
+          "source": "zendesk",
+          "title": "Feedback app",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-41794",
+          "source": "zendesk",
+          "title": "vraag",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42083",
+          "source": "zendesk",
+          "title": "RE: Vernieuwing in je Givt-app: Ontdek de nieuwe geefflow!",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42168",
+          "source": "zendesk",
+          "title": "New Voice Message from +31 (61) 3453150 on 04/08/2026 2:58 PM",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42152",
+          "source": "zendesk",
+          "title": "New Call from +31 (20) 6246573",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-41976",
+          "source": "zendesk",
+          "title": "Nieuwe partnerovereenkomst",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-42037",
+          "source": "zendesk",
+          "title": "Dashboard Request: Wijziging organisatienaam",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "zd-41363",
+          "source": "zendesk",
+          "title": "Reactie Plannen en Ontwikkelingen Januari 2026",
+          "routed_at": "2026-04-15T08:32:55-05:00",
+          "summary_hint": {}
         }
       ],
       "active": [
@@ -462,9 +763,9 @@
     },
     {
       "role": "ceo",
-      "queue_count": 3,
+      "queue_count": 4,
       "active_count": 19,
-      "total": 22,
+      "total": 23,
       "queue": [
         {
           "id": "granola-5564098a-de0b-452f-b9dd-73bd2bb5f81f",
@@ -486,6 +787,13 @@
           "title": "Weekend floor renovation planning with opa and work schedule coordination",
           "routed_at": "2026-04-15T03:20:33.411757Z",
           "summary_hint": "personal-life, solo note 2026-04-07"
+        },
+        {
+          "id": "slack-D08DBP5FGH4-1776195809.628029",
+          "source": "slack",
+          "title": null,
+          "routed_at": "2026-04-15T08:40:00-05:00",
+          "summary_hint": {}
         }
       ],
       "active": [
@@ -588,10 +896,18 @@
     },
     {
       "role": "bd-europe",
-      "queue_count": 0,
+      "queue_count": 1,
       "active_count": 11,
-      "total": 11,
-      "queue": [],
+      "total": 12,
+      "queue": [
+        {
+          "id": "lin-BD-11",
+          "source": "linear",
+          "title": "Proactively reach out to top churches for evaluation call",
+          "routed_at": "2026-04-15T08:36:30-05:00",
+          "summary_hint": {}
+        }
+      ],
       "active": [
         {
           "id": "email-19cf6f1db31e1d9b",
@@ -705,6 +1021,35 @@
       ]
     },
     {
+      "role": "self-mgmt",
+      "queue_count": 2,
+      "active_count": 1,
+      "total": 3,
+      "queue": [
+        {
+          "id": "lin-ME-159",
+          "source": "linear",
+          "title": "Trackers not running on schedule — 5 of 6 stale",
+          "routed_at": "2026-04-15T08:38:00-05:00",
+          "summary_hint": {}
+        },
+        {
+          "id": "lin-ME-123",
+          "source": "linear",
+          "title": "Time learning — track durations + learn estimates",
+          "routed_at": "2026-04-15T08:38:30-05:00",
+          "summary_hint": {}
+        }
+      ],
+      "active": [
+        {
+          "id": "lin-ME-123",
+          "title": "Time learning — track durations + learn estimates",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
       "role": "bd-us-g4k",
       "queue_count": 0,
       "active_count": 2,
@@ -750,24 +1095,10 @@
           "status_summary": "0/1 tasks done"
         }
       ]
-    },
-    {
-      "role": "self-mgmt",
-      "queue_count": 0,
-      "active_count": 1,
-      "total": 1,
-      "queue": [],
-      "active": [
-        {
-          "id": "lin-ME-123",
-          "title": "Time learning — track durations + learn estimates",
-          "status_summary": "0/1 tasks done"
-        }
-      ]
     }
   ],
   "totals": {
     "roles_with_work": 8,
-    "grand_total": 118
+    "grand_total": 165
   }
 }

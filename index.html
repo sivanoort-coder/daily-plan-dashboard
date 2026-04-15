@@ -9,7 +9,6 @@
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
 <script>
-// Recharts UMD is unreliable on CDN — stub out with no-op components so the dashboard renders without charts.
 window.Recharts = new Proxy({}, { get: () => (props) => React.createElement("div", { style: { display: "none" } }, props && props.children) });
 </script>
 <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
@@ -104,14 +103,23 @@ function PlanDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100 p-6">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-white mb-2">Day Plan</h1>
-        <p className="text-gray-400">
-          {totals.grand_total} items across {totals.roles_with_work} role{totals.roles_with_work !== 1 ? "s" : ""}
-        </p>
-        <p className="text-xs text-gray-500 mt-2">
-          Generated {PLAN_DATA.generated_at ? new Date(PLAN_DATA.generated_at).toLocaleString() : ""}
-        </p>
+      <div className="mb-8 flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-white mb-2">Day Plan</h1>
+          <p className="text-gray-400">
+            {totals.grand_total} items across {totals.roles_with_work} role{totals.roles_with_work !== 1 ? "s" : ""}
+          </p>
+          <p className="text-xs text-gray-500 mt-2">
+            Generated {PLAN_DATA.generated_at ? new Date(PLAN_DATA.generated_at).toLocaleString() : ""}
+          </p>
+        </div>
+        <button
+          onClick={() => window.location.reload()}
+          title="Re-fetch data.json"
+          className="shrink-0 px-4 py-2 rounded-md bg-gray-800 hover:bg-gray-700 text-gray-100 text-sm font-medium border border-gray-700 transition-colors"
+        >
+          ↻ Refresh
+        </button>
       </div>
 
       {showEmptyState ? (

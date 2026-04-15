@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T05:37:57.917403Z",
+  "generated_at": "2026-04-15T05:54:30.032242Z",
   "roles": [
     {
       "role": "pm-support",
@@ -587,6 +587,124 @@
       ]
     },
     {
+      "role": "bd-europe",
+      "queue_count": 0,
+      "active_count": 11,
+      "total": 11,
+      "queue": [],
+      "active": [
+        {
+          "id": "email-19cf6f1db31e1d9b",
+          "title": "Sheltersuit relatie-middag 21 mei - RSVP needed",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c55f5ce101f396",
+          "title": "Hans Hospes - podcast script + collecte verwerking rapport",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d47ac32987570b",
+          "title": "René Bos (Oosterkerk) — uses Yuki, follow up on Givt interest",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d216a5795b3cbf",
+          "title": "Leigh Richmond (Bridge Community Leeds) — booked call, active prospect",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d201e3a5a0f471",
+          "title": "Moreno Liverani (Aquila/Constellation) — follow up before Italy trip in May",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19abfa55b31dd391",
+          "title": "GBS (Gereformeerde Bijbelstichting) — asking for Givt pricing, BD prospect",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c8b55603842b1b",
+          "title": "Ad Sosef — RKKN/DocBase: contact RKKN directly about Givt integration",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19becbd59144dae7",
+          "title": "(F)Luister — draft Mollie donor migration email for Wim Kamphorst",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c1556adbd81711",
+          "title": "Nils Smith (Amplify) — open to making curriculum partner intros for G4K",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19b9ff80803dbf53",
+          "title": "Katie Eller Murray (Lemon-Aid Project) — in-person meeting never rescheduled",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c66898f717d208",
+          "title": "Hans Hospes — payment clarification Dec 15 (€1,258.34)",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "cfo",
+      "queue_count": 0,
+      "active_count": 9,
+      "total": 9,
+      "queue": [],
+      "active": [
+        {
+          "id": "email-19bb2a6171c0471e",
+          "title": "WBSO 2026 GIVT beschikking - up to €29,808 LB-voordeel",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19cc1e6c6380ffea",
+          "title": "OkTAP password expired - needs reset",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d1b5fc3b82d2f9",
+          "title": "Van Klompenburg invoice (Factuur 20260508) — check entity + forward to Dext",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19ca0c6ac2c6b735",
+          "title": "Osda.work invoice — Kristy McCreary freelancer payment ($567.05)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19cd514eb8cbec24",
+          "title": "CCOK invoice (Brooke Gassett) — encrypted, needs opening",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c5ce7c5cae36fa",
+          "title": "State Farm US insurance bill — February 2026",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c66d2017c29a06",
+          "title": "Rubes US Tax Services — down payment invoice for 2025 US return",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c76676497a0f96",
+          "title": "Delta Dental March 2026 billing — account 0014065",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19bc5a8377cdff00",
+          "title": "BCBSOK (Blue Cross Blue Shield Oklahoma) — health insurance bill January 2026",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
       "role": "bd-us-g4k",
       "queue_count": 0,
       "active_count": 2,
@@ -649,7 +767,7 @@
     }
   ],
   "totals": {
-    "roles_with_work": 6,
-    "grand_total": 98
+    "roles_with_work": 8,
+    "grand_total": 118
   }
 }

@@ -1,1 +1,655 @@
-{"granola":{"items":[]},"calendar":{"items":[]},"linear":{"items":[{"id":"lin-ME-159","title":"Trackers not running on schedule — 5 of 6 stale","inbox_status":"snoozed","discovered_at":"2026-04-14T17:13:08.572733+00:00","timestamp":"2026-04-10T16:39:19.702Z","suggested_role":"pm-support","suggested_classification":"review","scoring_hints":{"priority":3}}]},"zendesk":{"items":[{"id":"zd-42252","title":"Foutieve afschrijving?","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T16:58:39Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42251","title":"Dashboard Request: wijzigen van het bedankje scherm","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T16:34:29Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42250","title":"Re: Confirmation of your donation through Givt","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T15:33:07Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42249","title":"Supportverzoek","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T12:57:05Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42202","title":"Dashboard Request: Contact gegevens periodieke gever","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T08:00:35Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42245","title":"Veranderen bankrekeningnummer","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T07:50:22Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-39002","title":"Website NL: contact formulier","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T07:42:15Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42244","title":"Supportverzoek","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T07:11:22Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42049","title":"Aanvullende info nav onze meeting van afgelopen maandag","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-14T05:55:52Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42235","title":"probleem app","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T20:09:46Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42232","title":"Aanmelding plus plan Givt","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T20:03:47Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42234","title":"Dashboard Request: Wijziging organisatienaam","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T19:59:47Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42233","title":"Stuur mij maar een nummer wat het lukt mij niet g…","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T19:58:34Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42231","title":"Dashboard Request: RSIN wijziging","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T18:42:07Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42230","title":"Dashboard Request: Wijziging juridische organisatienaam","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T18:40:24Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42226","title":"Re: [Givt] Re: Dashboard Request: Bankrekening toevoegen","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T14:44:15Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42225","title":"inlogprobleem","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T14:07:26Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42224","title":"App Feedback","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T14:01:54Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42223","title":"App Feedback","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T13:41:17Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-40788","title":"Re: RE: [BULK] Samenwerking Givt en Opwekking","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-13T12:36:43Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42217","title":"Receipt for subscription payment Apr 12, 2026","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-12T13:52:07Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42214","title":"Re: Account successfully verified","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-12T07:43:57Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"new"}},{"id":"zd-42212","title":"App Feedback","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-11T11:00:26Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42201","title":"Feedback app","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-10T19:39:47Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-41794","title":"vraag","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-10T18:58:22Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42083","title":"RE: Vernieuwing in je Givt-app: Ontdek de nieuwe geefflow!","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-09T18:58:39Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-41976","title":"Nieuwe partnerovereenkomst","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-04-02T06:57:14Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-42037","title":"Dashboard Request: Wijziging organisatienaam","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-03-31T17:30:44Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}},{"id":"zd-41363","title":"Reactie Plannen en Ontwikkelingen Januari 2026","inbox_status":"untriaged","discovered_at":"2026-04-15T02:56:42.283900+00:00","timestamp":"2026-03-05T10:41:13Z","suggested_role":"pm-support","suggested_classification":"ticket-response","scoring_hints":{"ticket_status":"open"}}],"incoming_calls":{"voicemail":8,"missed_no_vm":1,"total":9},"new_count":10,"open_count":19},"email":{"items":[{"id":"email-19d883547d73c88e","title":"Your PSO payment is scheduled","inbox_status":"untriaged","discovered_at":"2026-04-15T03:41:58.582066+00:00","timestamp":"2026-04-13T12:58:05-06:00","suggested_role":"ceo","suggested_classification":"review","scoring_hints":{"from":"communications@aep-email.com","snippet":"Your PSO payment is scheduled","joe_replied":false,"joe_reply_is_latest":false}}]},"slack":{"items":[]}}
+{
+  "generated_at": "2026-04-15T05:37:57.917403Z",
+  "roles": [
+    {
+      "role": "pm-support",
+      "queue_count": 47,
+      "active_count": 24,
+      "total": 71,
+      "queue": [
+        {
+          "id": "lin-COR-2348",
+          "source": "linear",
+          "title": "Hardware fulfillment for Fellowship Lutheran and cable security improvement",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-643",
+          "source": "linear",
+          "title": "Implement push notification question on creation of recurring donation",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2292",
+          "source": "linear",
+          "title": "Smarter parent texts: only if kid selected a cause Sunday",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2291",
+          "source": "linear",
+          "title": "Website: Add About Us / story section to increase trust",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2290",
+          "source": "linear",
+          "title": "Website: Parent purchases kiosk for church use case",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2289",
+          "source": "linear",
+          "title": "Switch Christ Pres + Ridge Christian from app to kiosk",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2288",
+          "source": "linear",
+          "title": "Automated US church onboarding + launch email journey",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2287",
+          "source": "linear",
+          "title": "Kiosk iPad battery low alert to church",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2150",
+          "source": "linear",
+          "title": "Send out newsletter",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1506",
+          "source": "linear",
+          "title": "Enhanced Onboarding Flow for Church Context",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-632",
+          "source": "linear",
+          "title": "Pause Donation in Recurring donations",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1468",
+          "source": "linear",
+          "title": "Upload more than 1 tab. Either per regular and extra or at the start.",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1118",
+          "source": "linear",
+          "title": "Feature: Cash collection entry with consolidated payment link generation",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2151",
+          "source": "linear",
+          "title": "include path on the dashboard towards upselling",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-2135",
+          "source": "linear",
+          "title": "De Zonnebloem (Janine Goedvolk) - follow-up meeting re lottery & onboarding",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1727",
+          "source": "linear",
+          "title": "Fix duplicate active bank account mandates on IBAN change",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1305",
+          "source": "linear",
+          "title": "Investigate monthly total display errors Personal Summary",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1306",
+          "source": "linear",
+          "title": "Improve feedback system on Personal Summary",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1311",
+          "source": "linear",
+          "title": "Check out unclarities in costs and payouts for Nico Ketting",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1490",
+          "source": "linear",
+          "title": "As user I want to see the specific name in email of the cause I do a donation to",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-555",
+          "source": "linear",
+          "title": "US payouts to Givt are not working",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1961",
+          "source": "linear",
+          "title": "Scanning Givt QR-code doesn't give the confirmation screen the first time you scan when the app wasn't open in the background yet",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1952",
+          "source": "linear",
+          "title": "Improvement onboarding orgs via website by adding type of org and country",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1195",
+          "source": "linear",
+          "title": "GiftAid reminders after registration of new user",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1123",
+          "source": "linear",
+          "title": "Feature: Multi-language support for cause descriptions",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1477",
+          "source": "linear",
+          "title": "When a user terminates its account we want to inform the organizations with which we shared data of that user with the request to delete their data",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1931",
+          "source": "linear",
+          "title": "Ghost \"No Assignment\" blocks appearing in Vroomshoop schedule",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1578",
+          "source": "linear",
+          "title": "Backend needs to support linking an allocation to a external collectgroup",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1718",
+          "source": "linear",
+          "title": "Seperate bank accounts live",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1841",
+          "source": "linear",
+          "title": "Percentage-based donation split (70/30) to two bank accounts — discovery (Hervormde gemeente Haarlem)",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1829",
+          "source": "linear",
+          "title": "Create website comparison page for competitive positioning (Givt vs Scipio)",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1828",
+          "source": "linear",
+          "title": "Build generic notification system with inbox functionality",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-255",
+          "source": "linear",
+          "title": "User can give with bank account of the organisation",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1728",
+          "source": "linear",
+          "title": "We need to rewrite the emails we send to org_requests to be more salesy and to mention the free plan etc.",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1707",
+          "source": "linear",
+          "title": "Show our integrations on our website",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-333",
+          "source": "linear",
+          "title": "Turn off mission bedtime + all notifications on bedtimes",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-134",
+          "source": "linear",
+          "title": "Set up a non profit for Givt Inc",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-803",
+          "source": "linear",
+          "title": "Add a Givt contribution for parents in sign up flow - Givt4kids 2.0",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1577",
+          "source": "linear",
+          "title": "Backend needs to support that a payout can go to a different collect group",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1579",
+          "source": "linear",
+          "title": "Front end allowing dashboard user to assign an allocation to an external collect group",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1580",
+          "source": "linear",
+          "title": "Front end needs to support to show in payouts what money has been paid out to which external collectgroup",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1581",
+          "source": "linear",
+          "title": "External collectgroup dashboard needs to support to see which payout came from which (inintial) collectgroup",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1053",
+          "source": "linear",
+          "title": "Recurring donation: the count thingy doesn't stop counting when a recurring donation is completed or stopped",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1594",
+          "source": "linear",
+          "title": "User's try to make a Recurring Donation with the same frequency for the same organization, while there is one still ongoing",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1510",
+          "source": "linear",
+          "title": "Single Schedule upload for parent orgs or for orgs with several collection groups (kerkelijk bureaus)",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "lin-COR-1512",
+          "source": "linear",
+          "title": "Auto-detecting and labeling special days like Easter, Ascension, Pentecost, Christmas in the UI",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "cal-msa4ha2lftv954ovg9s71hb93s",
+          "source": "calendar",
+          "title": "Nico Ketting en Sjoerd (Joe) van Oort",
+          "routed_at": "2026-04-15T03:37:51.308939+00:00",
+          "summary_hint": null
+        }
+      ],
+      "active": [
+        {
+          "id": "email-19d6d901913afa2a",
+          "title": "Reply to Rob Kroeze (KRC Van Elderen) re: VPB filing",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "email-19d68b9a012ddfb4",
+          "title": "Build shareholder-email-analyst skill (first case: Better World jaarrekening Q&A)",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "email-19d348e268e2ba75",
+          "title": "Follow up with Sacha re: FluisterNederland sandbox access",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d3a0158e12bb48",
+          "title": "Follow up with Vorstenbosch — Yannick Stuger",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "lin-ME-124",
+          "title": "Follow up with Bridges on first kiosk placement",
+          "status_summary": "1/1 tasks done"
+        },
+        {
+          "id": "granola-dd148b91-5f35-4688-843a-65ab3a0ac4b9",
+          "title": "Arjan de Weerd en Sjoerd (Joe) van Oort",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "lin-ME-127",
+          "title": "Phase 0: Schema migration — status → inbox_status",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-20260401-camila-mandate-review",
+          "title": "Review sign mandate flow NL + UK (COR-2306) — Camila done, waiting on Joe",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-3d07d8f0-3958-476c-a005-16a7768328da",
+          "title": "Product trio — Apr 9",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "zd-42142",
+          "title": "Incorrect payment",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "zd-42119",
+          "title": "Nog steeds niet v rekening afgeschreven",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "slack-20260331-andy-conference",
+          "title": "Analyze Intentional Church Conference for G4K exhibition fit",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C05AGMCJUDU-1775255883",
+          "title": "Ark Mission — confirm merge with NBG, update Givt org record (COR-2350)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C08BXP1DEG0-1775400836.597029",
+          "title": "For You flow loading — follow up with Maikel on slow 5G decision",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C08BXP1DEG0-1775731662.216449",
+          "title": "UK VAT — follow up on Givt's suggestions / Linear items",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "lin-COR-2346",
+          "title": "Bridges Foundation: packaging & 3D printing partnership — get quote and evaluate",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-31a33e66-673f-41f0-aaf3-abbc3fc7bf04",
+          "title": "Toos van Oers en Sjoerd (Joe) van Oort (2026-04-10 9am)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-47657598-3506-4ef7-a2e3-f5b06e874a84",
+          "title": "Givtapp coin bin and bracket design iteration with Robert",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C5S218Y9M-1776103384.283249",
+          "title": "Tine: beacons for El Shaddai DWXI communion collection",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d88050e5be40f7",
+          "title": "Aangepaste coin tray (Robbert Bakker)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C08BXP1DEG0-1775844525.009099",
+          "title": "Andy: does Bridges packing quote include coin bin + bracket printing?",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-C08BXP1DEG0-1775778562.469459",
+          "title": "Andy: Givy not reading Claude VAT message",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "slack-channel-maikel-vat-20260409",
+          "title": "Maikel: review VAT registration impact on website/dashboard/backend",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d8c518c8943ca1",
+          "title": "G4K: Kunststofplatenshop offerteaanvraag",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "ceo",
+      "queue_count": 3,
+      "active_count": 19,
+      "total": 22,
+      "queue": [
+        {
+          "id": "granola-5564098a-de0b-452f-b9dd-73bd2bb5f81f",
+          "source": "granola",
+          "title": "Weekend floor renovation planning with opa and work schedule coordination",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "granola-3ee398d6-fa64-428c-9b21-aec489ccd74b",
+          "source": "granola",
+          "title": "Family trip planning to Java for father's birthday",
+          "routed_at": "2026-04-14T21:48:50.634417+00:00",
+          "summary_hint": null
+        },
+        {
+          "id": "granola-5564098a-de0b-452f-b9dd-73bd2bb5f81f",
+          "source": "granola",
+          "title": "Weekend floor renovation planning with opa and work schedule coordination",
+          "routed_at": "2026-04-15T03:20:33.411757Z",
+          "summary_hint": "personal-life, solo note 2026-04-07"
+        }
+      ],
+      "active": [
+        {
+          "id": "email-19cfc7cf7c30e6f9",
+          "title": "Completed: Docusign Loan Agreement Azienda Alberto - GIVT 35k",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19cfc7cf1288e18d",
+          "title": "Completed: Docusign Loan Agreement Azienda Alberto - GIVT 35k (copy)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d73d014b840f39",
+          "title": "Re: Green Card Process & Check In",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d7295d73e2e4a4",
+          "title": "Fit Verzuimbeheer BV - Belangrijk bericht",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d4ed622c123e2c",
+          "title": "Hans ter Steege — reply re: shareholder management fee question",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d431ac09a06cdd",
+          "title": "Richard van het Ende (Voort B.V.) — KvK eHerkenning / ketenmachtiging",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d5390fcac76a22",
+          "title": "Albert Jochems shareholder reply — schedule mgmt fee discussion + email vote on annual accounts",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "email-19d01aec6d7915bd",
+          "title": "Voort BV VPB 2024 — review + sign akkoordverklaring + approve KvK deponering",
+          "status_summary": "0/2 tasks done"
+        },
+        {
+          "id": "email-19cfa520a4861b56",
+          "title": "Jongste Beheer CLA GIVT 2026 25k — check DocuSign status",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c8f835a4a3d345",
+          "title": "NPEX — funding proposal (obligatielening / equity / NPEX Connect)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c9e9986faed7ea",
+          "title": "Robert Hoefman — CV for comms/positioning role (Fridays only)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19c7a315bbe0a574",
+          "title": "Jolanda van der Roest — brand/positioning approach doc",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19bda6b95a2d93d9",
+          "title": "Philip Galloway (Seedrs investor) — requesting company update",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-ab2e15bc-27bf-48a4-baa3-293071ea8af3",
+          "title": "UK relocation tax optimization for employee expenses",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-fbb15a0b-ebed-4398-9138-3b2236332bf3",
+          "title": "Remarkable device thoughts (2026-04-13)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-5ab9b0de-7c91-4f7f-8812-a77b32b8016d",
+          "title": "Retro (2026-04-13 9am) — QI planning",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "granola-95abcbee-4a9a-492f-90f5-411ae1f20534",
+          "title": "Looking back + Retro (2026-04-13 8am) — QI planning",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d880cd9abfc6f4",
+          "title": "Vragen 13-04 (Justin 1-on-1 follow-up)",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d779e27b0de651",
+          "title": "Review Pedro Dias Nunes time off request",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "bd-us-g4k",
+      "queue_count": 0,
+      "active_count": 2,
+      "total": 2,
+      "queue": [],
+      "active": [
+        {
+          "id": "email-19ba067ef4a3348f",
+          "title": "Katie Eller Murray / Lemon-Aid Project - scheduling follow-up",
+          "status_summary": "0/1 tasks done"
+        },
+        {
+          "id": "email-19d3291d5c3ab508",
+          "title": "CRM/Sales Process Automation suggestion from Pieter Doevendans",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "hr",
+      "queue_count": 0,
+      "active_count": 1,
+      "total": 1,
+      "queue": [],
+      "active": [
+        {
+          "id": "granola-d79036e9-efd5-4fe7-a131-28b09204d0d5",
+          "title": "Hilde Visum / Andy / Sjoerd (2026-04-10)",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "personal-life",
+      "queue_count": 0,
+      "active_count": 1,
+      "total": 1,
+      "queue": [],
+      "active": [
+        {
+          "id": "lin-ME-185",
+          "title": "Send payment request to Donna and Matt",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    },
+    {
+      "role": "self-mgmt",
+      "queue_count": 0,
+      "active_count": 1,
+      "total": 1,
+      "queue": [],
+      "active": [
+        {
+          "id": "lin-ME-123",
+          "title": "Time learning — track durations + learn estimates",
+          "status_summary": "0/1 tasks done"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "roles_with_work": 6,
+    "grand_total": 98
+  }
+}
